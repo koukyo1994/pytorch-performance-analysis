@@ -6,6 +6,7 @@
 
 ## How to setup
 
-Build a docker image with the command `make docker-build`. After that create a container with the command `make env`.
-
-Analyses are done with Jupyter environment. To start jupyter, run `make jupyter` command and access [9000th port](http://localhost:9000).
+1. Build a docker image with the command `make docker-build`.
+2. Create a container with the command `make env`.
+3. Run `make jupyter` command to start Jupyter enviroment.
+4. Access [9000th port](http://localhost:9000).
