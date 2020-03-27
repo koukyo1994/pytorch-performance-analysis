@@ -13,10 +13,10 @@ env:
 	-w /app/${NAME} \
 	--user `id -u`:`id -g` \
 	--publish 9000:9000 \
-	--cpuset-cpus=0-3 \
-	--memory=2gb \
+	--cpuset-cpus=0-1 \
+	-m 2g \
 	--oom-kill-disable \
-	--shm-size=500mb \
+	--shm-size=500M \
 	${IMG}:${TAG} /bin/bash
 
 jupyter:
